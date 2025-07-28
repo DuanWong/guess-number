@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/*--------------------------------------------*/
+/*Utility classes                             */
+/*--------------------------------------------*/
+
+.container {
+    width: min(100% - 30px, 1200px);
+    margin-inline: auto;
+}
+
+.grid {
+    display: grid;
+    place-items: center;
+}
+
+.flex {
+    display:flex;
+    align-items: center;
+}
+
+/*--------------------------------------------*/
+/*Background                                  */
+/*--------------------------------------------*/
+
+body {
+    background: #171921;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/*--------------------------------------------*/
+/*Main                                        */
+/*--------------------------------------------*/
+
+h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.flip-card {
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 2s;
+}
+
+.front {
+    position: absolute;
+    inset: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    background-color: #fff;
+    text-align: center;
+    cursor: not-allowed;
+    font-size: 25px;
+}
+
+.back {
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue; 
+    position: absolute;
+    inset: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    text-align: center;
+    cursor: not-allowed;
+    font-size: 50px;
+}
+
+.guess {
+    margin-left:20px;
+    width: 100px;
+    height:50px;
+    background-color: #fff;
+    color: #ff00ff;
+    border-radius: 10px;
+    cursor: not-allowed;
+}
+
+.output {
+    width:450px;
+    height: 50px;
+    background-color: #990099; 
+    font-size: 35px;
+    color:#fff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    cursor: not-allowed;
+}
+
+.play {
+    position: fixed;
+    inset: 50px 50px auto auto;
+    width: 200px;
+    height:50px;
+    background-color: #fff;
+    color:#ff00ff;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.play:hover {
+    background: #e4e2e2;
+    transition: ease-in-out 0.25s;
+}
+
+

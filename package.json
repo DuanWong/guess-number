@@ -1,0 +1,15 @@
+{
+  "name": "project-guess-number",
+  "version": "1.0.0",
+  "description": "<p>\r     In some games, we sometimes want to add animation to make the game's interactive interface more interesting. In this tutorial, I will teach you how to make a flippable graphic. My tutorial is based on a classic number guessing game. Players fill in the guessed number on the front of a graphic. When the player guesses correctly, the graphic will flip and show the correct answer on the back.\r   </p>",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
