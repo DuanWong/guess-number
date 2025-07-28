@@ -25,6 +25,7 @@ function validateInput(value) {
 }
 
 function initializeGame() {
+    times = 10;
     generateRandomNumber();
     guessTimes.innerText = 'Guesses Left: 10';
 
@@ -32,16 +33,15 @@ function initializeGame() {
     input.disabled = false;
     input.style.cursor = 'pointer';
     output.value = '';
-    playButton.innerText = 'Start';
     guessButton.style.cursor = 'pointer';
     flipCard.style.transform = 'rotateY(0deg)';
+    output.value = 'Enter a number in the circle';
 }
 
 function endGame() {
     input.value = '';
     input.disabled = true;
     input.style.cursor = 'not-allowed';
-    playButton.innerText = 'Restart';
     guessButton.style.cursor = 'not-allowed';
     playButton.style.cursor = 'pointer';
 }
@@ -73,6 +73,7 @@ guessButton.addEventListener('click', function() {
             input.focus();
         } else if(times === 0) {
             guessTimes.innerText = `Guesses Left: ${times}`;
+            output.value = 'Game Over!';
             endGame();
         }
     }
@@ -81,5 +82,5 @@ guessButton.addEventListener('click', function() {
 playButton.addEventListener('click', () => {
     initializeGame();
     input.focus();
-    playButton.style.cursor = 'not-allowed';
+    playButton.innerText = 'RESTART';
 });
