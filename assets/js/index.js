@@ -32,7 +32,7 @@ function initializeGame() {
     input.disabled = false;
     input.style.cursor = 'pointer';
     output.value = '';
-    playButton.innerText = 'Play';
+    playButton.innerText = 'Start';
     guessButton.style.cursor = 'pointer';
     flipCard.style.transform = 'rotateY(0deg)';
 }
@@ -41,7 +41,7 @@ function endGame() {
     input.value = '';
     input.disabled = true;
     input.style.cursor = 'not-allowed';
-    playButton.innerText = 'Play again';
+    playButton.innerText = 'Restart';
     guessButton.style.cursor = 'not-allowed';
     playButton.style.cursor = 'pointer';
 }
@@ -68,11 +68,11 @@ guessButton.addEventListener('click', function() {
         if(times > 0) {
             checkNumber(input.value);
             times--;
-            guessTimes.innerText = `Guesses: ${times}`;
+            guessTimes.innerText = `Guesses Left: ${times}`;
             input.value = '';
             input.focus();
         } else if(times === 0) {
-            guessTimes.innerText = `Guesses: ${times}`;
+            guessTimes.innerText = `Guesses Left: ${times}`;
             endGame();
         }
     }

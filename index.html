@@ -13,24 +13,30 @@
     <link rel="stylesheet" href="./assets/css/style.css" media="all">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" >
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Jersey+25&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
     <script src="./assets/js/index.js" defer></script>
   </head>
   <body class="grid">
     <main class="container grid">
-       <h2 class="guess-times"></h2>
-       <div class="flex">
-          <div class="flip-card">
-              <input type="text" class=" front input" placeholder="Type a number" disabled>
-              <div class="back">
-                <p class="answer"></p>
-              </div>
+      <div class="grid">
+        <div class="title"><h1>GUESS NUMBER</h1></div>
+        <div class="subtitle"><h2>~The number is between 0 to 50~</h2></div>
+        <button class="play">Start</button>
+      </div>
+      <div class="grid">
+        <div class="guesses-left"><h2 class="guess-times"></h2></div>
+        <div class="flip-card">
+          <input type="text" class=" front input" disabled>
+          <div class="back">
+            <p class="answer"></p>
           </div>
-          <button class="guess">Check</button>
-       </div>
-       <input class="output" type="text" placeholder="Between 0 and 50" disabled>
-       <button class="play">Play</button>
+        </div>
+        <button class="guess">Check</button>
+      </div>
+      <input class="output" type="text" disabled>
     </main>
+    <footer>
+      <p>&copy; 2025 Duan Wang</p>
+    </footer>
   </body>
 </html>
