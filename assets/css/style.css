@@ -158,3 +158,22 @@ footer {
     line-height: 50px;
     font-size: 10px;
 }
+
+/*--------------------------------------------*/
+/*Media screen                                */
+/*--------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+    .output {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .title {
+        font-size: 10px;
+    }
+
+    .subtitle {
+        font-size: 6px;
+    }
+}

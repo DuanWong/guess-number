@@ -46,15 +46,18 @@ function endGame() {
     playButton.style.cursor = 'pointer';
 }
 
-function checkNumber() {
+function checkNumber(isLastGuess = false) {
     const userGuess = parseInt(input.value.trim(), 10);
 
     if (!validateInput(input.value)) return; 
 
+    times--;
+    guessTimes.innerText = `Guesses Left: ${times}`;
+
     if (userGuess > randomNumber) {
-        output.value = 'My number is smaller';
+        output.value = isLastGuess ? 'Game Over!' : 'My number is smaller';
     } else if (userGuess < randomNumber) {
-        output.value = 'My number is bigger';
+        output.value = isLastGuess ? 'Game Over!' : 'My number is bigger';
     } else {
         output.value = 'Correct Guess!!!';
         answer.innerText = `${randomNumber}`;
@@ -65,15 +68,12 @@ function checkNumber() {
 
 guessButton.addEventListener('click', function() {
     if (!input.disabled) {
-        if(times > 0) {
-            checkNumber(input.value);
-            times--;
-            guessTimes.innerText = `Guesses Left: ${times}`;
+        if(times > 1) {
+            checkNumber(false);
             input.value = '';
             input.focus();
-        } else if(times === 0) {
-            guessTimes.innerText = `Guesses Left: ${times}`;
-            output.value = 'Game Over!';
+        } else if(times === 1) {
+            checkNumber(true);
             endGame();
         }
     }
@@ -83,4 +83,10 @@ playButton.addEventListener('click', () => {
     initializeGame();
     input.focus();
     playButton.innerText = 'RESTART';
+});
+
+input.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && !input.disabled) {
+    guessButton.click();
+  }
 });
