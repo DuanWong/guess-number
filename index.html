@@ -16,14 +16,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Jersey+25&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
     <script src="./assets/js/index.js" defer></script>
   </head>
-  <body class="grid">
+  <body>
+    <header class="grid">
+      <div class="title"><h1>GUESS NUMBER</h1></div>
+      <div class="subtitle"><h2>~The number is between 0 to 50~</h2></div>
+    </header>
     <main class="container grid">
       <div class="grid">
-        <div class="title"><h1>GUESS NUMBER</h1></div>
-        <div class="subtitle"><h2>~The number is between 0 to 50~</h2></div>
-        <button class="play">START</button>
-      </div>
-      <div class="grid">
+        <div class="btn-group">
+          <button class="play">START</button>
+          <button class="guess">CHECK</button>
+        </div>
         <div class="guesses-left"><h2 class="guess-times"></h2></div>
         <div class="flip-card">
           <input type="text" class=" front input" disabled>
@@ -31,11 +34,10 @@
             <p class="answer"></p>
           </div>
         </div>
-        <button class="guess">CHECK</button>
+        <input class="output" type="text" placeholder="Press START to play" disabled>
       </div>
-      <input class="output" type="text" placeholder="Press START to play" disabled>
     </main>
-    <footer>
+    <footer class="grid">
       <p>&copy; 2025 Duan Wang</p>
     </footer>
   </body>

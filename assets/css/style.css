@@ -27,12 +27,23 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: #2a6db5;
+  background: #5695da;
   font-family: "Press Start 2P", system-ui;
 }
 
 main {
-    min-height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px - 100px);
+}
+
+header {
+    height:100px;
+}
+
+footer {
+    height: 50px;
+    color:#fff;
+    line-height: 50px;
+    font-size: 10px;
 }
 
 /*--------------------------------------------*/
@@ -40,28 +51,30 @@ main {
 /*--------------------------------------------*/
 
 .title {
-    margin-top:50px;
     font-size: 15px;
 }
 
 .subtitle {
-    margin: 20px 0;
     font-size: 8px;
 }
 
-.guesses-left {
-    width:auto;
-    height: 40px;
-    
-    h2 {
-        font-size: 15px;
-    }
+.btn-group {
+    width: 450px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .guesses-left {
-    color: #fff;
-    font-size: 30px;
+    color: #e64040;
+    width:auto;
+    height: 40px;
     line-height: 50px;
+    margin-top: 20px;
+}
+
+.guess-times {
+    font-size: 20px;
 }
 
 .flip-card {
@@ -92,7 +105,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #148396; 
+    background-color: #03300d; 
+    color: #fff;
     position: absolute;
     inset: auto;
     width: 100%;
@@ -123,18 +137,17 @@ main {
 .output {
     margin-top: 30px;
     width:450px;
-    height: 50px;
-    background: #09962a;
+    height: 100px;
+    background: #03300d;
     font-size: 15px;
-    color:#e64040;
-    border-radius: 5px;
+    color:#fff;
+    border-radius: 10px;
     text-align: center;
-    line-height: 50px;
     cursor: not-allowed;
 }
 
 .output::placeholder {
-    color: #000;
+    color: #fff;
 }
 
 .play {
@@ -153,17 +166,6 @@ main {
 }
 
 /*--------------------------------------------*/
-/*Footer                                      */
-/*--------------------------------------------*/
-
-footer {
-    height: 50px;
-    color:#fff;
-    line-height: 50px;
-    font-size: 10px;
-}
-
-/*--------------------------------------------*/
 /*Media screen                                */
 /*--------------------------------------------*/
 
@@ -179,5 +181,9 @@ footer {
 
     .subtitle {
         font-size: 6px;
+    }
+
+    .guess-times {
+        font-size: 8px;
     }
 }
