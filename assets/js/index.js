@@ -11,7 +11,7 @@ let randomNumber;
 let times = 10;
 
 function generateRandomNumber() {
-    randomNumber = Math.floor(Math.random() * 50);
+    randomNumber = Math.floor(Math.random() * 51);
 }
 
 function validateInput(value) {
