@@ -173,6 +173,12 @@ footer {
     .output {
         width: 100%;
         font-size: 10px;
+        flex-wrap: wrap;
+    }
+
+    .btn-group {
+        width: 100%;
+        gap: 100px;
     }
 
     .title {

@@ -55,9 +55,9 @@ function checkNumber(isLastGuess = false) {
     guessTimes.innerText = `Guesses Left: ${times}`;
 
     if (userGuess > randomNumber) {
-        output.value = isLastGuess ? 'Game Over!' : 'My number is smaller';
+        output.value = isLastGuess ? 'Game Over' : 'My number is smaller';
     } else if (userGuess < randomNumber) {
-        output.value = isLastGuess ? 'Game Over!' : 'My number is bigger';
+        output.value = isLastGuess ? 'Game Over' : 'My number is bigger';
     } else {
         output.value = 'Correct Guess!!!';
         answer.innerText = `${randomNumber}`;
