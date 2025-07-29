@@ -1,4 +1,4 @@
-# 🎯 Guess the Number Game
+# 🎯 Guess Number Game
 
 A simple JavaScript-based number guessing game where players try to guess a randomly generated number within a limited number of attempts.
 
@@ -22,7 +22,7 @@ A simple JavaScript-based number guessing game where players try to guess a rand
 ## 🚀 How to Play
 
 1. Click the **START** button to start a new game.
-2. Enter a number between 1 and 50 into the input field.
+2. Enter a number between 0 and 50 into the input field.
 3. Click **Check** to submit your guess.
 4. Read the feedback message to guide your next guess.
 5. You win if you guess correctly within the allowed attempts.  
