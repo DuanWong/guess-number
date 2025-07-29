@@ -124,13 +124,17 @@ main {
     margin-top: 30px;
     width:450px;
     height: 50px;
-    background-color: #1e237d; 
+    background: #09962a;
     font-size: 15px;
     color:#e64040;
     border-radius: 5px;
     text-align: center;
     line-height: 50px;
     cursor: not-allowed;
+}
+
+.output::placeholder {
+    color: #000;
 }
 
 .play {
