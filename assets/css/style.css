@@ -27,7 +27,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: #5695da;
+  background: #5695da url(../img/background.webp);
   font-family: "Press Start 2P", system-ui;
 }
 
@@ -41,7 +41,7 @@ header {
 
 footer {
     height: 50px;
-    color:#fff;
+    color: #2c2828;
     line-height: 50px;
     font-size: 10px;
 }
@@ -52,10 +52,12 @@ footer {
 
 .title {
     font-size: 15px;
+    color: #2c2828;
 }
 
 .subtitle {
     font-size: 8px;
+    color: #2c2828;
 }
 
 .btn-group {
@@ -125,7 +127,6 @@ footer {
     color: #fff;
     border-radius: 5px;
     cursor: not-allowed;
-    box-shadow: 4px 4px 6px #0f0f0f;
     font-size: 12px;
 }
 
@@ -157,7 +158,6 @@ footer {
     color:#fff;
     border-radius: 5px;
     font-size: 12px;
-    box-shadow: 4px 4px 6px #0f0f0f;
 }
 
 .play:hover {
