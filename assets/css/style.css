@@ -27,7 +27,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: #5695da url(../img/background.webp);
+  background: #5695da url(../img/background.webp) center center / cover no-repeat;
   font-family: "Press Start 2P", system-ui;
 }
 
@@ -121,18 +121,18 @@ footer {
 }
 
 .guess {
-    width: 100px;
-    height:40px;
-    background-color: #148396;
+    width: 150px;
+    height:50px;
+    background-color: #ffaf24;
     color: #fff;
     border-radius: 5px;
     cursor: not-allowed;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .guess:hover {
     transition: ease-in-out 0.25s;
-    background-color: #044853;
+    background-color: #8b5e10;
 }
 
 .output {
@@ -152,12 +152,12 @@ footer {
 }
 
 .play {
-    width: 100px;
-    height:40px;
+    width: 150px;
+    height:50px;
     background-color: #a82b2b;
     color:#fff;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .play:hover {
